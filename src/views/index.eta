@@ -1,7 +1,24 @@
 <% layout('./partials/layout') %>
 
-<section>
-    Home
+<link rel="stylesheet" href="css/chat.css">
+
+<section class="chat-container" id="chat-container"> 
+    <div class="messages has-text-centered">
+        <b class="mt-5">There is no message</b>
+    </div>
+    <div class="box columns mt-2">
+        <div class="column is-four-fifths">
+            <input 
+                class="input" 
+                type="text" 
+                placeholder="Some message ..." 
+                id="message-input"
+            >
+        </div>
+        <div class="column has-text-centered">
+            <button class="button is-link is-fullwidth" id="send-btn">Send</button>
+        </div>
+    </div>
 </section>
 
-<script src="/js/index.js"></script>
+<script src="/js/chat.js"></script>

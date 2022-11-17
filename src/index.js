@@ -2,6 +2,7 @@ const express = require("express");
 const { createServer } = require("http");
 const path = require("path");
 const eta = require("eta");
+const cookieParser = require("cookie-parser");
 const config = require("./config");
 const routes = require("./routes");
 const configureSocketIOServer = require("./socket");
@@ -9,6 +10,9 @@ const configureSocketIOServer = require("./socket");
 const app = express();
 const server = createServer(app);
 
+
+// Middleware
+app.use(cookieParser());
 
 // Settings
 app.set("port", config.PORT);

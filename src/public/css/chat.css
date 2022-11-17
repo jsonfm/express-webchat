@@ -1,11 +1,11 @@
 .chat-container {
-    width: clamp(300px, 40%,  800px);
+    width: clamp(300px, 100%,  800px);
     margin: 0 auto;
     padding: 1rem 0;
 }
 
 .messages {
-    height: 400px;
+    height: 60vh;
     overflow-y: scroll;
     overflow-x: hidden;
 }

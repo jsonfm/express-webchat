@@ -3,8 +3,8 @@
 <link rel="stylesheet" href="css/chat.css">
 
 <section class="chat-container" id="chat-container"> 
-    <div class="messages has-text-centered">
-        <b class="mt-5">There is no message</b>
+    <div class="messages has-text-centered" id="messages">
+        <!-- <b class="mt-5">There is no message</b> -->
     </div>
     <div class="box columns mt-2">
         <div class="column is-four-fifths">
@@ -21,4 +21,5 @@
     </div>
 </section>
 
+<script src="/socket.io/socket.io.js"></script>
 <script src="/js/chat.js"></script>

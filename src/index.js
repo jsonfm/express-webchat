@@ -1,6 +1,7 @@
 const express = require("express");
 const { createServer } = require("http");
 const path = require("path");
+const eta = require("eta");
 const config = require("./config");
 const routes = require("./routes");
 const configureSocketIOServer = require("./socket");
@@ -11,7 +12,11 @@ const server = createServer(app);
 
 // Settings
 app.set("port", config.PORT);
-app.set("view", path.join(__dirname, "views"));
+
+// Templates engine
+app.engine("eta", eta.renderFile)
+app.set("view engine", "eta");
+app.set("views", path.join(__dirname, "views"));
 
 
 // Public
@@ -24,5 +29,5 @@ app.use(routes);
 // server
 configureSocketIOServer(server);
 server.listen(config.PORT, () => {
-    console.log(`App running on ${config.PORT}`);
+    console.log(`App running on http://localhost:${config.PORT}`);
 })

@@ -1,0 +1,5 @@
+<% layout('./partials/layout.eta') %>
+
+<section>
+    <h2>hellow</h2>
+</section>

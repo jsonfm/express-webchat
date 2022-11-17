@@ -1,5 +1,7 @@
-<% layout('./partials/layout.eta') %>
+<% layout('./partials/layout') %>
 
 <section>
-    <h2>hellow</h2>
+    Home
 </section>
+
+<script src="/js/index.js"></script>

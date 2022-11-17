@@ -1,0 +1,18 @@
+<% layout('./partials/layout') %>
+
+<link rel="stylesheet" type="text/css" href="/css/register.css">
+
+<section class="flex">
+    <div class="box is-flex is-flex-direction-column px-5 py-5 form">
+        <h4 class="has-text-centered">Write your username!</h4>
+        <input 
+            class="input is-link" 
+            type="text" 
+            placeholder="ghost, snake, gollum, etc ..."
+            id="username"
+        >
+        <button class="button is-link" id="login">Enter</button>      
+    </div>
+</section>
+
+<script src="/js/register.js"></script>

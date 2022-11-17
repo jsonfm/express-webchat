@@ -10,4 +10,8 @@ router.get("/", (req, res) => {
     res.render("index.eta")
 })
 
+router.get("/register", (req, res) => {
+    res.render("register.eta")
+})
+
 module.exports = router;
